@@ -157,7 +157,7 @@ const Page = () => {
   }, [scrollY]);
 
   return (
-    <div className=" mt-[90px] overflow-x-hidden customScrollBar w-[99vw] h-[2000px] sm:h-[200vh]">
+    <div className=" mt-[20vh] overflow-x-hidden customScrollBar w-[99vw] h-[2000px] sm:h-[200vh]">
       <div className="flex flex-col sm:flex-row  gap-11  justify-center fixed left-[6vw] customScrollBar">
         <div className=" mt-[00px] sm:mt-[0px]">
           <div className="w-[22vw] flex flex-col gap-4">
@@ -365,6 +365,7 @@ const Page = () => {
                         alt="Image 3"
                       />
                     ) : null}
+                    
 
                     {scrollY >= divisions[3] && scrollY < divisions[4] ? (
                       <motion.img
